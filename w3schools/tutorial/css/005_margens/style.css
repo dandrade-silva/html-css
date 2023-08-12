@@ -1,0 +1,45 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+code {
+  color: red;
+}
+
+#margem1 {
+  border: 2px solid green;
+  margin: 70px;
+}
+
+#margem2 {
+  border: 2px solid blue;
+  margin-top: 50px;
+}
+
+#margem3 {
+  border: 2px solid orchid;
+  margin-right: 50px;
+}
+
+#margem4 {
+  border: 2px solid chocolate;
+  margin-bottom: 50px;
+}
+
+#margem5 {
+  border: 2px solid brown;
+  margin-left: 50px;
+}
+
+div#exemplo {
+  background-color: rgb(235, 235, 235);
+  padding-bottom: 10px;
+  padding-left: 10px; /* próximo capitulo w3schools*/
+}
+
+div#codigo {
+  background-color: white;
+  border-left: 3px solid green;
+  margin-right: -20px;
+  padding-left: 10px; /* próximo capitulo w3schools*/
+}

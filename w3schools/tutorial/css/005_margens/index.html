@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Margins</title>
+</head>
+
+<body>
+    <h1>CSS Margins</h1>
+    <p>As margens são usadas para criar espaço ao redor dos elementos, fora de qualquer borda definida.</p>
+    <p id="margem1"> Este elemento tem uma margem de 70px.</p>
+    <p>Com CSS, você tem controle total sobre as margens. Existem propriedades para definir a margem para cada lado de
+        um elemento (superior, direita, inferior e esquerda).</p>
+
+    <p>Todas as propriedades de margem podem ter os seguintes valores:</p>
+    <ul>
+        <li><code>auto</code> - o navegador calcula a margem</li>
+        <li><code>length</code> - especifica uma margem em px, pt, cm, etc.</li>
+        <li><code>%</code> - especifica uma margem em % da largura do elemento recipiente</li>
+        <li><code>inherit</code> - especifica que a margem deve ser herdada do elemento pai</li>
+    </ul>
+    <p><strong>Dica:</strong> Valores negativos são permitidos.</p>
+
+    <p><strong>Exemplos</strong></p>
+    <p id="margem2">Margem superior de 50px.</p>
+    <p id="margem3">Margem direita de 50px.</p>
+    <p id="margem4">Margem inferior de 50px.</p>
+    <p id="margem5">Margem esquerda de 50px.</p>
+
+    <hr>
+
+    <h2>CSS Margin Collapse</h2>
+    <p>Às vezes, as margens superior e inferior dos elementos são recolhidas em uma única margem que é igual à maior das
+        duas margens.</p>
+
+    <p>Isso não acontece nas margens esquerda e direita! Apenas as margens superior e inferior!</p>
+
+    <p>Observe o seguinte exemplo:</p>
+
+    <div id="exemplo">
+        <h3>Exemplo</h3>
+        <p>Demonstração de colapso de margem:</p>
+        <div id="codigo">
+            <pre>
+        <code>
+<span style="color: brown;">h1</span> {
+    <span style="color: brown;">margin</span> 0 0 50px 0;
+}
+    
+<span style="color: brown;">h2</span> {
+    <span style="color: brown;">margin</span> 20px 0 0 0;
+}
+        </code>
+        </pre>
+        </div>
+    </div>
+</body>
+
+</html>
