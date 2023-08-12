@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Cores CSS</title>
+</head>
+
+<body>
+    <h1>Cores CSS</h1>
+    <p>As cores são especificadas usando nomes de cores predefinidos ou valores RGB, HEX, HSL, RGBA, HSLA</p>
+
+    <h2>Predefinidas</h2>
+    <p>Em CSS, uma cor pode ser especificada usando um nome de cor predefinido: </p>
+    <div id="pred" style="background-color: tomato;">Tomato</div>
+    <div id="pred" style="background-color: orange;">Orange</div>
+    <div id="pred" style="background-color: dodgerblue;">DodgerBlue</div>
+    <div id="pred" style="background-color: mediumseagreen;">MediaumSeaGreen</div>
+    <div id="pred" style="background-color: Gray;">Gray</div>
+    <div id="pred" style="background-color: Slateblue;">SlateBlue</div>
+    <div id="pred" style="background-color: Violet;">Violet</div>
+    <div id="pred" style="background-color: LightGray;">LightGray</div>
+
+    <p>CSS/HTML suporta <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">140 nomes de
+            cores</a> padrão.</p>
+
+    <h2>RGB</h2>
+    <p>Em CSS, uma cor pode ser especificada como um valor RGB, usando esta fórmula:
+        <strong>rgb(red,green,blue)</strong>
+    </p>
+    <p>Cada parâmetro (red,green,blue) define a intensidade da cor entre 0 e 255.</p>
+    <p>Por exemplo, rgb(255, 0, 0) é exibido como vermelho, porque vermelho é definido como seu valor mais alto (255) e
+        os outros são definidos como 0.</p>
+
+    <p>Para exibir preto, defina todos os parâmetros de cor como 0, assim: rgb(0, 0, 0).</p>
+
+    <p>Para exibir branco, defina todos os parâmetros de cor para 255, assim: rgb(255, 255, 255).</p>
+
+    <p>Experimente misturar os valores RGB abaixo:</p>
+
+    <div onchange="mudargb()">
+        <p>VERMELHO <input type="number" name="txtred" id="txtred" min="0" max="255"></p>
+        <p>VERDE <input type="number" name="txtgreen" id="txtgreen" min="0" max="255"></p>
+        <p>AZUL <input type="number" name="txtblue" id="txtblue" min="0" max="255"></p>
+        <div id="rgbres">
+            <p>RGB(255,0,0)</p>
+        </div>
+    </div>
+</body>
+
+</html>

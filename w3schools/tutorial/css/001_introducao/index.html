@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p#cssInterno {
+            color: linen;
+            text-align: center;
+            background-color: black;
+        }
+    </style>
+
+    <title>Introdução CSS</title>
+</head>
+
+<body>
+    <h1>Tutorial CSS W3Schools</h1>
+
+    <h2>Primeiros passos CSS</h2>
+
+    <h3>Sintaxe CSS</h3>
+    <p><code>h1{color: blue; font-size: 12px;}</code></p>
+
+    <p>Explicação:</p>
+    <ol>
+        <li>*{ = Início do bloco de declaração</li>
+        <li>h1 = O seletor aponta para o elemento HTML que você deseja estilizar.</li>
+        <li>**color:blue; = declaração com "propriedade:valor" separadas por ponto e vírgula (;).</li>
+        <li>**font-size:12px = declaração com "propriedade:valor" separadas por ponto e vírgula (;).</li>
+        <li>*} = Final do bloco de declaração</li>
+    </ol>
+    <p>*Várias declarações CSS são separadas por ponto e vírgula e os blocos de declaração são cercados por chaves.</p>
+    <p>**Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.</p>
+
+    <h3>Seletores básicos</h3>
+
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <th style="width:20%">Seletor</th>
+                    <th style="width:20%">Exemplo</th>
+                    <th>Descrição do Exemplo</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>#firtname</td>
+                    <td>Seleciona todos os elementos com id="firstname"</td>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>.intro</td>
+                    <td>Seleciona todos os elementos com class="intro"</td>
+                </tr>
+                <tr>
+                    <td>elemento.class</td>
+                    <td>p.intro</td>
+                    <td>Seleciona apenas os elementos &lt;p&gt; com a class="intro"</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>Seleciona todos os elementos</td>
+                </tr>
+                <tr>
+                    <td>elemento</td>
+                    <td>p</td>
+                    <td>Seleciona todos elementos &lt;p&gt;</td>
+                </tr>
+                <tr>
+                    <td>elemento, elemento</td>
+                    <td>div, p</td>
+                    <td>Seleciona todos elemneots &lt;div&gt; e todos elementos &lt;p&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p>EXEMPLOS</p>
+
+    <p>Essa linha está dentro da tag &lt;p&gt; sem id.</p>
+    <p id="para1">Essa linha está dentro da tag &lt;p&gt; com id para1</p>
+    <p class="center">Essa linha está dentro da tag &lt;p&gt; com a classe center</p>
+    <h4 class="center">Essa linha está dentro da tag &lt;h4&gt; com a classe center</h4>
+
+    <p class="center large">Este parágrafo refere-se a duas classes (center e large)</p>
+
+
+
+    <h2>Como adicionar CSS ao HTML</h2>
+    <ul type="square">
+        <li>CSS Externo</li>
+        <ul type="circle">
+            <li>
+                A página HTML deve incluir uma referência ao arquivo CSS (&lt;link rel="stylesheet"
+                href="nomearquivo.css"&gt;) dentro da seção head.
+            </li>
+        </ul>
+        <li>CSS Interno</li>
+        <ul type="circle">
+            <li>
+                O estilo interno é definido dentro do elemento &lt;style&gt;, dentro da seção head.
+            </li>
+        </ul>
+
+        <li>CSS Embutido</li>
+        <ul type="circle">
+            <li>
+                Adicione o atributo style ao elemento relevante
+            </li>
+
+        </ul>
+
+        <h3>Exemplos:</h3>
+        <p>Esse paragrafo utiliza CSS Externo</p>
+        <p id="cssInterno">Esse paragrafo utiliza CSS Interno</p>
+        <p style="color: blue;background-color: aqua;">Esse paragrafo utiliza CSS Embutido</p>
+    </ul>
+
+    <h2>Cores</h2>
+    <p id="normal">As cores são especificadas usando nomes de cores predefinidos ou valores RGB, HEX, HSL, RGBA, HSLA.
+    </p>
+    <p id="normal">CSS/HTML suporta
+        <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">140 nomes de cores</a>
+        por padrão
+    </p>
+
+    <h3>Background (Cor de fundo)</h3>
+    <p id="normal">Você pode definir a cor de fundo dos elementos HTML:</p>
+    <p id="normal" style="background-color: Dodgerblue;">Olá Mundo</p>
+    <p id="normal" style="background-color: tomato;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
+        quod at ea modi distinctio rerum. Nam nemo natus explicabo quae, eius ullam! Veritatis expedita numquam vero
+        autem culpa consectetur dolore!</p>
+
+    <h3>Color (Cor do texto)</h3>
+    <p id="normal" style="color: Tomato;">Olá, mundo</p>
+    <p id="normal" style="color: DodgerBlue;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
+        commodi
+        tempore consequatur
+        itaque</p>
+    <p id="normal" style="color: MediumSeaGreen;">Fuga exercitationem nobis perspiciatis dicta adipisci illum dolores
+        totam
+        quidem similique impedit
+        accusamus id nesciunt eaque ipsum laudantium molestiae, eveniet sint unde.</p>
+
+    <h3>Border (Cor da borda)</h3>
+    <p id="normal" style="border: 7px solid Tomato;">Olá Mundo! [solid]</p>
+    <p id="normal" style="border: 7px dotted dodgerblue;">Olá Mundo! [dotted]</p>
+    <p id="normal" style="border: 7px dashed MediumSeaGreen;">Olá Mundo! [dashed]</p>
+    <p id="normal" style="border: 7px double Tomato;">Olá Mundo! [double]</p>
+    <p id="normal" style="border: 7px groove dodgerblue;">Olá Mundo! [groove]</p>
+    <p id="normal" style="border: 7px ridge MediumSeaGreen;">Olá Mundo! [ridge]</p>
+    <p id="normal" style="border: 7px inset Tomato;">Olá Mundo! [inset]</p>
+    <p id="normal" style="border: 7px outset dodgerblue;">Olá Mundo! [outset]</p>
+    <p id="normal" style="border: 2px none MediumSeaGreen;">Olá Mundo! [none]</p>
+    <p id="normal" style="border: 2px hidden Tomato;">Olá Mundo! [hidden]</p>
+
+    <h3>Códigos de Cores</h3>
+    <ul>
+        <li>
+            <p id="normal">RGB (red, green, blue)</p>
+            <p id="normal">Cada parâmetro define a intensidade da cor entre 0 e 255.</p>
+            <p id="normal">Os tons de cinza geralmente são definidos usando valores iguais para todas as 3 fontes de
+                luz:</p>
+
+            <p style="color: rgb(255,0,30);">Cor rgb(255,0,30)</p>
+            <p style="color: rgb(70,60,0);">Cor rgb(70,60,00)</p>
+
+        </li>
+        <li>
+            <p id="normal">RGBA (red, green, blue, alfa)</p>
+            <p id="normal">Os valores de cores RGBA são uma extensão dos valores de cores RGB com um canal alfa - que
+                especifica a opacidade de uma cor. O parâmetro alfa é um número entre 0,0 (totalmente transparente) e
+                1,0 (nada transparente):</p>
+            <p style="color: rgba(80,80,80,1);">Cor rgba(255,60,70,1)</p>
+            <p style="color: rgba(80,80,80,0.2);">Cor rgba(80,80,80,0.2)</p>
+        </li>
+        <li>
+            <p id="normal">HEX (#RRGGBB)</p>
+            <p id="normal">Uma cor hexadecimal é especificada com: #RRGGBB, onde os inteiros hexadecimais RR (red),
+                GG (green) e BB (blue) especificam os componentes da cor.</p>
+            <p style="color: #ff0000;">Exemplo com a cor #ff0000</p>
+            <p style="color: #fa05a0;">Exemplo com a cor #fa05a0</p>
+        </li>
+        <li>
+            <p id="normal">HSL/HSLA (hue, saturation, lightness, alfa)</p>
+            <p id="normal">Em CSS, uma cor pode ser especificada usando matiz, saturação e luminosidade (HSL)</p>
+            <p id="normal">Matiz é um grau na roda de cores de 0 a 360. 0 é vermelho, 120 é verde e 240 é azul.</p>
+            <p id="normal">A saturação é um valor percentual. 0% significa um tom de cinza e 100% é a cor total.</p>
+            <p id="normal">A luminosidade também é uma porcentagem. 0% é preto, 50% não é nem claro nem escuro, 100% é
+                branco</p>
+        </li>
+    </ul>
+</body>
+
+</html>

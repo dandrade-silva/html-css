@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Background CSS</title>
+</head>
+
+<body>
+    <h1>Background CSS</h1>
+    <p>As propriedades de background CSS são usadas para adicionar efeitos de plano de fundo aos elementos</p>
+    <p>Vamos aprender as propriedades de background abaixo:
+    <ul type="disc">
+        <li><code>background-color</code></li>
+        <li><code>background-image</code></li>
+        <li><code>background-repeat</code></li>
+        <li><code>background-attachment</code></li>
+        <li><code>background-position</code></li>
+        <li><code>background</code> (propriedade abreviada)</li>
+    </ul>
+    <hr>
+
+    </p>
+    <h2>CSS background-color</h2>
+    <p>A propriedade <code>background-color</code> especifica a cor de fundo de um elemento. Podemos utilizar qualquer
+        tipo de cor (predefinida, rgb, hex, hsl)</p>
+    <pre>
+    <code>
+    body {
+        background-color: lightblue;
+    }
+    </code>
+    </pre>
+
+    <p>Aqui temos alguns exemplos:</p>
+    <p id="bgcolor">Tag &lt;p&gt; formatada com <code>background-color: lightgreen</code></p>
+    <p class="bgcolor">Outra tag &lt;p&gt; formatada com <code>background-color: #ffa5f7</code></p>
+
+    <h3>Opacidade/Transparência</h3>
+    <p>A propriedade <code>opacity</code> especifica a opacidade/transparência de um elemento. Pode assumir um valor de
+        0.0 - 1.0. Quanto menor o valor, mais transparente:</p>
+    <p id="bgcolor2">Tag &lt;p&gt; com <code>opacity: 0.6</code></p>
+    <p class="bgcolor2">Tag &lt;p&gt; formatada com <code>opacity: 0.3</code></p>
+    <p>
+        <strong>Observação:</strong> ao usar a propriedade <code>opacity</code> para adicionar transparência ao plano de
+        fundo de um elemento, todos os
+        seus elementos filhos herdam a mesma transparência. Isso pode dificultar a leitura do texto dentro de um
+        elemento totalmente transparente.
+    </p>
+    <h3>Transparência usando RGBA</h3>
+    <p>Se você não deseja aplicar opacidade aos elementos filhos, como no exemplo acima, use valores de cores RGBA . O
+        exemplo a seguir define a opacidade da cor de fundo e não do texto:</p>
+    <p id="bgcolor3">Tag &lt;p&gt; formatada com <code>background-color: rgba(0, 128, 0, 1)</code></p>
+    <p id="bgcolor4">Tag &lt;p&gt; formatada com <code>background-color: rgba(0, 128, 0, 0.6)</code></p>
+    <p id="bgcolor5">Tag &lt;p&gt; formatada com <code>background-color: rgba(0, 128, 0, 0.3)</code></p>
+    <p id="bgcolor6">Tag &lt;p&gt; formatada com <code>background-color: rgba(0, 128, 0, 0.1)</code></p>
+
+    <hr>
+
+    <h2>CSS background-image</h2>
+    <p>A propriedade <code>background-image</code> especifica uma imagem a ser usada como plano de fundo de um elemento.
+    </p>
+    <p>Por padrão, a imagem é repetida para cobrir todo o elemento.</p>
+
+    <p>Exemplo</p>
+    <div id="bgimage1">
+        <p>Olá, Mundo!</p>
+        <p>Dentro dessa div estamos utilizando a propriedade<code>background-image</code></p>
+    </div>
+
+    <hr>
+
+    <h2> CSS background-repeat</h2>
+    <p>Por padrão, a propriedade <code>background-image</code> repete uma imagem horizontal e verticalmente.</p>
+    <p>No exemplo abaixo ela está repetindo apenas no eixo y</p>
+    <div id="bgrepeat">
+        <p>Olá, Mundo!</p>
+        <p>Dentro dessa div estamos utilizando a propriedade <code>background-repeat</code></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fugit laudantium voluptas. Non a nulla
+            quae recusandae aut perspiciatis minima eligendi, perferendis voluptates expedita, est, tempora quam
+            voluptatibus fuga cumque.</p>
+    </div>
+
+    <hr>
+
+    <h2>CSS background-position</h2>
+    <p>A propriedade <code>background-position</code> é usada para especificar a posição da imagem de fundo. Exemplo:
+    </p>
+    <div id="bgposition">
+        <p>Olá, Mundo!</p>
+        <p>Dentro dessa div estamos utilizando a propriedade <code>background-position</code></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate eveniet nemo! Molestias ullam
+            magnam eum earum inventore maiores. Dolores, fugiat culpa! Consectetur, dolorem voluptate. Nobis, dolorum.
+            Eum, repudiandae error?</p>
+    </div>
+
+    <hr>
+
+    <h2>CSS background-attachment</h2>
+    <p>A propriedade <code>background-attachment</code> especifica se a imagem de fundo deve rolar ou ser fixa(não rolar
+        com o resto da página). Exemplo</p>
+    <a href="pagina2.html" target="_self" rel="next">Clique aqui para ver um exemplo</a>
+
+    <hr>
+
+    <h2>CSS Background Shorthand</h2>
+    <p>Para encurtar o código, também é possível especificar todas as propriedades do plano de fundo em uma única
+        propriedade. Isso é chamado de propriedade abreviada.Em vez de escrever:</p>
+    <pre>
+    <code>
+    body { 
+    background-color: #ffffff;
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    }
+    </code>
+    </pre>
+    <p>Você pode usar a propriedade abreviada <code>background</code>:</p>
+
+    <pre><code>body {
+        background: #ffffff url("img_tree.png") no-repeat right top;
+      }</code></pre>
+
+    <div id="bg">
+        <p>Olá, Mundo!</p>
+        <p>Dentro dessa div estamos utilizando a propriedade <code>background-position</code></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate eveniet nemo! Molestias ullam
+            magnam eum earum inventore maiores. Dolores, fugiat culpa! Consectetur, dolorem voluptate. Nobis, dolorum.
+            Eum, repudiandae error?</p>
+    </div>
+    <p>
+        Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
+    <ol>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-repeat</li>
+        <li>background-attachment</li>
+        <li>background-position</li>
+    </ol>
+    <p>Não importa se um dos valores da propriedade está faltando, desde que os outros estejam nesta ordem. Observe que
+        não usamos a propriedade <code>background-attachment</code> nos exemplos acima, pois ela não possui um valor.
+    </p>
+    </p>
+</body>
+
+</html>

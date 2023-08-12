@@ -1,0 +1,12 @@
+div#pred {
+  color: white;
+  text-align: center;
+  border: 1px dashed whitesmoke;
+}
+
+div#rgbres {
+  background-color: red;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}

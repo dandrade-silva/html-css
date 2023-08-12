@@ -1,0 +1,80 @@
+* {
+  font-size: 12pt;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+code {
+  font-family: monospace;
+  font-size: 10pt;
+}
+
+#bgcolor {
+  background-color: lightgreen;
+}
+
+.bgcolor {
+  background-color: #ffa5f7;
+}
+
+#bgcolor2 {
+  background-color: lightgreen;
+  opacity: 0.6;
+}
+
+.bgcolor2 {
+  background-color: #ffa5f7;
+  opacity: 0.3;
+}
+
+#bgcolor3 {
+  background-color: rgba(0, 128, 0, 1);
+}
+
+#bgcolor4 {
+  background-color: rgba(0, 128, 0, 0.6);
+}
+
+#bgcolor5 {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+#bgcolor6 {
+  background-color: rgba(0, 128, 0, 0.1);
+}
+
+#bgimage1 {
+  border: 2px solid;
+  font-size: 18pt;
+  background-image: url(images/background.jpg);
+}
+
+#bgrepeat {
+  border: 2px solid;
+  font-size: 18pt;
+  background-image: url(images/background.jpg); /* imagem se repete no eixo x e y */
+  background-repeat: repeat-y; /* repeat(default), no-repeat, repeat-x, repeat-y */
+}
+
+#bgposition {
+  border: 2px solid;
+  font-size: 18pt;
+  background-image: url(images/dino.png); /* imagem se repete no eixo x e y */
+  background-repeat: no-repeat; /* repeat(default), no-repeat, repeat-x, repeat-y */
+  background-position: right top;
+}
+
+body#pag2 {
+  background-image: url(images/dino.png);
+  background-repeat: no-repeat;
+  background-position: right top; /* right, left, bottom, top e center*/
+  background-attachment: fixed; /* fixed ou scroll(default) */
+  /* ainda não aprendi as propriedades abaixo. Peguei exemplo do site */
+  margin-right: 160px;
+  text-align: justify;
+}
+
+/* Maneira abreviada de utilizar o background*/
+#bg {
+  border: 2px solid;
+  background: #ffffff url("images/background.jpg") no-repeat right top;
+}

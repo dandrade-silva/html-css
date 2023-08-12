@@ -1,0 +1,149 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12pt;
+}
+
+code {
+  color: red;
+}
+
+#bd1 {
+  border: 1px solid;
+}
+
+#bd2 {
+  border-bottom: 1px solid red;
+}
+
+.bd3 {
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.bd4 {
+  border-left: 2px solid blue;
+  background-color: #def6ff;
+}
+
+p.dotted {
+  border-style: dotted;
+}
+
+p.dashed {
+  border-style: dashed;
+}
+
+p.solid {
+  border-style: solid;
+}
+
+p.double {
+  border-style: double;
+}
+
+p.groove {
+  border-style: groove;
+}
+
+p.ridge {
+  border-style: ridge;
+}
+
+p.inset {
+  border-style: inset;
+}
+
+p.outset {
+  border-style: outset;
+}
+
+p.none {
+  border-style: none;
+}
+
+p.hidden {
+  border-style: hidden;
+}
+
+p.mix {
+  border-style: dotted double dashed solid;
+}
+
+p.thin {
+  border-width: thin; /* predefinidos: thin, medium, thick*/
+}
+
+p.medium {
+  border-width: medium;
+}
+
+p.thick {
+  border-width: thick;
+}
+
+p.mixwt {
+  border-width: 1px 2px 3px 4px; /* 4: top right bottom left | 2: top/bottom right/left | 1: all*/
+}
+
+p.mixwt2 {
+  border-width: 2px 4px; /* 4: top right bottom left | 2: top/bottom right/left | 1: all*/
+}
+
+p.cor1 {
+  border-color: red;
+}
+
+p.cor2 {
+  border-color: #00ff00;
+}
+
+p.cor3 {
+  border-color: rgb(0, 0, 255);
+}
+
+p.cor4 {
+  border-color: red green blue yellow;
+}
+
+p.cor5 {
+  border-color: red blue;
+}
+
+p#bdabr {
+  border: 2px solid gray;
+}
+
+p#bdabrtop {
+  border-top: 2px solid gray;
+}
+
+p#bdabrright {
+  border-right: 2px solid gray;
+}
+
+p#bdabrbottom {
+  border-bottom: 2px solid gray;
+}
+
+p#bdabrleft {
+  border-left: 2px solid gray;
+}
+
+p#bdarred1 {
+  border: 2px solid red;
+}
+
+p#bdarred2 {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+p#bdarred3 {
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+p#bdarred4 {
+  border: 2px solid red;
+  border-radius: 15px;
+}
