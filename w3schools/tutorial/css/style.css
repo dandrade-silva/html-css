@@ -1,0 +1,84 @@
+/* 
+Sintaxe CSS
+
+h1 {
+    color:blue; 
+    font-size:12px;
+}
+
+Explicação:
+
+h1               = O seletor aponta para o elemento HTML que você deseja estilizar.
+*{               = Início do bloco de declaração
+**color:blue;    = declaração com "propriedade:valor" separadas por ponto e vírgula (;).
+**font-size:12px = declaração com "propriedade:valor" separadas por ponto e vírgula (;).
+*}               = Final do bloco de declaração
+
+
+*Várias declarações CSS são separadas por ponto e vírgula e os blocos de declaração são cercados por chaves.
+**Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.
+*/
+
+/* INICIANDO */
+
+/* Essa configuração afetará todos os elementos HTML da página */
+* {
+    text-align: left;
+    color: black;
+  }
+
+/* Formata os elementos HTMl com a tag <p>*/
+p {
+    color: blue;
+    text-align: right;
+}
+
+/* Formata todos os elementos HTMl com id="para1" */
+#para1 {
+    color: red;
+    text-align: center;
+}
+
+/* Formata todos os elementos HTMl <p> com a class="center" */
+p.center {
+    text-align: center;
+    color: grey;
+}
+
+/* Formata todos os elementos HTMl com a class="large" */
+.large{
+    background: lightyellow;
+}
+
+/*
+O seletor de agrupamento seleciona todos os elementos HTML 
+com as mesmas definições de estilo.
+Observe o seguinte código CSS 
+(os elementos h1, h2 e p têm as mesmas definições de estilo):
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+Será melhor agrupar os seletores, para minimizar o código.
+
+Para agrupar seletores, separe cada seletor com uma vírgula.
+
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+
+*/
+
