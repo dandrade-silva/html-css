@@ -1,0 +1,19 @@
+div#background {
+  height: 600px;
+  width: 50%;
+  background-image: url("images/espaco.jpg");
+  background-size: cover;
+  margin: auto;
+}
+
+img {
+  display: inline;
+  width: 30%;
+  position: absolute;
+  margin: auto;
+}
+
+div#astronauta {
+  margin: 0px;
+  align-items: center;
+}

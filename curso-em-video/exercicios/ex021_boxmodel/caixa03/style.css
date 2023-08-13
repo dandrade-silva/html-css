@@ -1,0 +1,12 @@
+h1 {
+  border: 10px solid transparent;
+  padding: 2px;
+  text-align: center;
+
+  border-image-source: url("borda.png");
+  border-image-slice: 33;
+  border-image-repeat: repeat;
+
+  /* shorthand */
+  border-image: url("borda.png") 33 repeat;
+}

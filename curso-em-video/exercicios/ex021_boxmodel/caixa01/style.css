@@ -1,43 +1,73 @@
-h1 {
-  background-color: gainsboro;
+@charset "UTF-8";
 
-  /* Modificando as dimensões de uma caixa box-level */
-
-  /* Content (conteúdo)*/
-  height: max-content; /* altura */
-  width: 300px; /* largura */
-  text-align: center; /* centraliza todo conteúdo */
-
-  /* Padding (preenchimento) */
-  padding: 10px 5px; /* shorthand = top right bottom left */
-
-  /* Border (borda) */
-  border: 5px solid red; /* shorthand([obrigatório]) = size [style] color */
-
-  /* Margin (margem) */
-  /* margin: auto; centraliza a caixa na tela*/
-  margin: auto; /* shorthand = top right bottom left */
-
-  /* outline fica entre a borda e a margem */
-  outline: 5px dashed green;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2d313f;
+  margin: 0px;
 }
 
-a {
-  
-  background-color: lightcyan;
+header {
+  background-color: #262e4d;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+nav {
+  text-align: right;
+  background-color: #557afa;
+  padding: 3px;
+  /* 
+  SOMBRAS
+  1 horizontal
+  2 vertical
+  3 blur (embaçamento)
+  4 spread (espalhamento)
+  5 cor
+  */
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+
+  border-radius: 5px;
+}
+
+nav > a {
   text-decoration: none;
-  
-  /* Modificando as dimensões de uma caixa inline-level */
+  color: white;
+  font-weight: bold;
+  margin-right: 15px;
+}
 
-  /* Padding (preenchimento) */
-  padding: 1px; /* shorthand = top right bottom left */
+nav > a:hover {
+  text-decoration: underline;
+  color: #abb4d8f6;
+}
 
-  /* Border (borda) */
-  border: 1px solid blue; /* shorthand([obrigatório]) = size [style] color */
+main {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
 
-  /* Margin (margem) */
-  margin: 1px; /* shorthand = top right bottom left */
+article {
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 5px;
+}
 
-  /* muda para block-level */
-  display: block;
+article > aside {
+  background-color: rgb(165, 165, 165);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 4px;
+}
+
+footer > p {
+  margin: 0px;
 }
