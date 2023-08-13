@@ -1,0 +1,43 @@
+h1 {
+  background-color: gainsboro;
+
+  /* Modificando as dimensões de uma caixa box-level */
+
+  /* Content (conteúdo)*/
+  height: max-content; /* altura */
+  width: 300px; /* largura */
+  text-align: center; /* centraliza todo conteúdo */
+
+  /* Padding (preenchimento) */
+  padding: 10px 5px; /* shorthand = top right bottom left */
+
+  /* Border (borda) */
+  border: 5px solid red; /* shorthand([obrigatório]) = size [style] color */
+
+  /* Margin (margem) */
+  /* margin: auto; centraliza a caixa na tela*/
+  margin: auto; /* shorthand = top right bottom left */
+
+  /* outline fica entre a borda e a margem */
+  outline: 5px dashed green;
+}
+
+a {
+  
+  background-color: lightcyan;
+  text-decoration: none;
+  
+  /* Modificando as dimensões de uma caixa inline-level */
+
+  /* Padding (preenchimento) */
+  padding: 1px; /* shorthand = top right bottom left */
+
+  /* Border (borda) */
+  border: 1px solid blue; /* shorthand([obrigatório]) = size [style] color */
+
+  /* Margin (margem) */
+  margin: 1px; /* shorthand = top right bottom left */
+
+  /* muda para block-level */
+  display: block;
+}
