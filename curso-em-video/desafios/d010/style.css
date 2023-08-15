@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Idroid";
+  src: url("fontes/idroid.otf");
+}
+
+body {
+  background-color: gray;
+}
+
+header {
+  background-color: blue;
+}
+
+nav {
+  background-color: white;
+}
+
+main {
+  background-color: green;
+}
+
+section {
+  background-color: bisque;
+}
+
+#principal {
+  font-family: "Idroid";
+}
+
+.subtitulo {
+  font-family: "Idroid", sans-serif;
+  background-color: lightgreen;
+}
+
+article > p {
+  text-indent: 20px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.664);
+  color: white;
+}
