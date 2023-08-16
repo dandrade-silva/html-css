@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        width: 400px; /* Largura */
+        height: 400px; /* Altura */
+        border: 2px dashed black;
+        margin: 10px auto;
+      }
+
+      .box2 {
+        width: 50vw; /* Largura */
+        height: 50vh; /* Altura */
+        border: 2px dashed black;
+        margin: 10px auto;
+        position: relative;
+      }
+
+      .item1,
+      .item2,
+      .item3,
+      .item4,
+      .item5 {
+        width: 150px;
+        height: 150px;
+      }
+
+      .item1 {
+        background-color: blue;
+        /* 
+        RELATIVE (relativo)
+        Agora temos acesso as propriedades
+        TOP RIGHT BOTTOM LEFT 
+        
+        Imagine essa propriedade como uma "força"
+        vindo da posição que você informar
+        */
+        position: relative;
+        left: 130px;
+        top: 75px;
+      }
+
+      .item2 {
+        background-color: red;
+        position: relative;
+        left: 50px;
+        bottom: 5px;
+      }
+
+      .item3 {
+        background-color: blue;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .item4 {
+        background-color: red;
+        position: absolute;
+      }
+
+      .item5 {
+        background-color: black;
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Position</h1>
+
+    <h2>Static (valor padrão)</h2>
+
+    <hr />
+
+    <article>
+      <h1>Relative (Relativa)</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+        reprehenderit quasi! Minus blanditiis fuga architecto similique delectus
+        eaque quaerat, soluta voluptatibus? Aliquid voluptate accusantium
+        debitis consectetur culpa quos quas ad. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ipsam hic fugit quibusdam quidem vero
+        nobis sit, iste magni. Porro iure nam maxime architecto magni qui,
+        consequatur libero esse molestias possimus. Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Eligendi repellendus et soluta. Modi et
+        suscipit similique tenetur vitae amet dolores harum architecto earum
+        quas. Eos mollitia eius odio in ab. Agora temos acesso as propriedades
+        TOP, RIGHT, BOTTOM, LEFT. Imagine essa propriedade como uma "força"
+        vindo da posição que você informar.
+      </p>
+      <div class="box">
+        <div class="item1"></div>
+        <div class="item2"></div>
+      </div>
+    </article>
+
+    <hr />
+
+    <article>
+      <h1>Absolute (absoluta)</h1>
+      <div class="box2">
+        <div class="item3"></div>
+        <div class="item4"></div>
+      </div>
+    </article>
+
+    <hr />
+
+    <article>
+      <h1>Fixed (Fixo)</h1>
+      <p>
+        Vai garantir que o seu item sempre fique no lugar definido da tela.
+        (viewport)
+      </p>
+      <div class="box2">
+        <div class="item5"></div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa saepe
+        velit repellendus amet provident excepturi dolorum error minima quidem
+        libero commodi ullam deleniti non voluptatem vel cum veritatis sit
+        necessitatibus culpa, quam ut sed atque. Non laboriosam ipsam, sapiente,
+        laborum cum eveniet modi, illum officiis aliquid nihil praesentium nemo.
+        Quae natus odio asperiores quos quo commodi a aspernatur quibusdam totam
+        iure ab, numquam nulla in amet unde ratione dignissimos fugit fuga
+        quisquam reprehenderit sequi velit. Esse, quos? Fuga quasi blanditiis
+        deserunt corrupti distinctio pariatur fugit alias cumque! Nemo labore,
+        doloribus aliquam quod quidem quam asperiores quisquam. Iure ipsam
+        quibusdam, neque inventore voluptate, quod tempore consectetur
+        dignissimos, eos aut sit similique perspiciatis repellat dolorum autem
+        distinctio molestiae error amet assumenda quisquam impedit vel nobis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nemo ab
+        error consequuntur magni ratione blanditiis, explicabo assumenda modi.
+        Eaque ducimus et sequi debitis itaque corrupti reiciendis tempora qui
+        aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quis repellendus fugit optio, voluptates hic cumque perferendis veniam
+        quas saepe molestiae dolore dolorem. Dicta saepe temporibus nesciunt
+        rerum autem ipsam ea. Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Voluptatem doloribus, quas quaerat quod laborum aut
+        corporis, ratione earum fugiat aperiam quisquam ipsum expedita magni
+        illo deleniti qui adipisci in. Alias vero asperiores fuga dolorum dicta
+        nisi iste autem maiores molestias voluptatem, nobis saepe voluptatum
+        consequatur ratione ipsa numquam dolores eum optio velit. Tempore harum
+        sunt, aut recusandae cumque maxime laborum quaerat, sapiente consequatur
+        hic nisi fuga sint ea obcaecati! Fugiat, pariatur! Consequuntur adipisci
+        cum animi, tenetur praesentium fugiat voluptatum accusantium velit id
+        voluptatibus incidunt fugit sed hic! Pariatur ratione nostrum iure quam
+        soluta sapiente asperiores exercitationem voluptatem ipsum distinctio
+        dolor quia eligendi sed natus eaque reprehenderit, neque, deserunt quasi
+        nesciunt ut adipisci impedit dignissimos aspernatur. Placeat ea qui
+        error voluptatem. Totam, iure laboriosam nobis quae obcaecati pariatur
+        vero in odio nisi expedita doloremque. Accusantium culpa vel ad itaque!
+        Sint consectetur vero itaque dolor, quas dolore magnam. Minus, voluptate
+        perferendis rem similique harum explicabo nostrum in omnis deleniti.
+        Quibusdam praesentium, accusantium ab voluptatem reiciendis error illo
+        tempore laudantium! Iste laboriosam assumenda maxime sed pariatur
+        impedit minima nemo eveniet nesciunt quisquam ab dolore quae, qui,
+        soluta perferendis deleniti rem blanditiis repellendus consequuntur
+        omnis vel cupiditate veritatis. Natus sint hic quia numquam assumenda
+        veritatis porro ex id nisi voluptatum quaerat ullam facilis consequatur
+        distinctio, animi error magni temporibus exercitationem sapiente
+        dolorum. Aliquid, magnam? Consectetur eligendi commodi nemo nostrum
+        impedit, perferendis aliquid distinctio nihil eos ea veniam, ipsa
+        numquam optio amet unde ab consequuntur magni. Facere nihil possimus
+        provident deleniti aliquam culpa, recusandae quia.
+      </p>
+    </article>
+  </body>
+</html>
